@@ -1,0 +1,11 @@
+{
+  "name": "LR-recruit Java Dev",
+  "image": "mcr.microsoft.com/devcontainers/java:25",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}
