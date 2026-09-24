@@ -54,7 +54,7 @@ public class Calculator {
            double quotient = a/b;
            System.out.println("a/b="+quotient);
         }
-
+           sc.close();
     }
  }
 
