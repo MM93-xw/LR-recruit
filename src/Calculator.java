@@ -5,6 +5,10 @@ public class Calculator {
        Scanner sc = new Scanner(System.in);
        System.out.print("请输入运算符号:");
         String op = sc.next();
+
+      while (!op.equals("+") && !op.equals("-") && !op.equals("*") && !op.equals("/")) {
+        System.out.print("请从 + - * / 内选择: ");
+        op = sc.next();}
       
        if (op.equals("+"))
         {
@@ -39,19 +43,19 @@ public class Calculator {
        else if (op.equals("/"))
         {
          System.out.print("请输入整数1:");
-         long a=sc.nextLong();
+         double a=sc.nextLong();
          System.out.print("请输入除数2:");
-         long b=sc.nextLong();
+         double b=sc.nextLong();
         
-         if (b==0){
-           System.out.println("除数不能为0");}
+         while (b==0){
+           System.out.print("除数不能为0,请重新输入：");
+           b=sc.nextLong();}
 
-         else {
            double quotient = a/b;
-           System.out.println("a/b="+quotient);}
+           System.out.println("a/b="+quotient);
         }
 
     }
-}
+ }
 
 
